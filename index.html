@@ -1,50 +1,84 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="refresh" content="10; url=https://swbj.qsis.cn">
-<title>深思笔记合并至深悟笔记说明</title>
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-html, body {
-  height: 100%;
-  font-family: "Microsoft YaHei", sans-serif;
-  background-color: #f5f5f5;
-  color: #333;
-}
-.wrap {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0 20px;
-  text-align: center;
-}
-.title {
-  font-size: 22px;
-  margin-bottom: 24px;
-  font-weight: normal;
-}
-.text {
-  font-size: 16px;
-  line-height: 2;
-  margin-bottom: 12px;
-}
-.slogan {
-  font-size: 16px;
-  line-height: 2;
-  margin: 10px 0;
-}
-</style>
-</head>
-<body>
+<?php include 'header.php'; ?>
+    <style>
+
+        /* 顶部导航栏（和现有页面一致） */
+
+        /* 主体内容区 */
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        .containerb {
+            background: #ffffff;
+            border-radius: 4px;
+            padding: 60px 40px;
+            text-align: center;
+            max-width: 800px;
+            width: 100%;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        .error-code {
+            font-size: 120px;
+            font-weight: bold;
+            color: #995522;
+            line-height: 1;
+            margin-bottom: 25px;
+        }
+        .error-title {
+            font-size: 32px;
+            color: #333333;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+        .error-desc {
+            font-size: 18px;
+            color: #555555;
+            line-height: 1.8;
+            margin-bottom: 40px;
+        }
+        .btn-group {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .btn {
+            padding: 12px 35px;
+            border-radius: 4px;
+            font-size: 18px;
+            font-weight: 500;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        /* 主按钮：暖棕填充（匹配现有页面主色） */
+        .btn-primary {
+            background: #995522;
+            color: #ffffff;
+            border: none;
+        }
+        .btn-primary:hover {
+            background: #b36b2e;
+        }
+        /* 次按钮：暖棕边框 */
+        .btn-outline {
+            background: transparent;
+            color: #995522;
+            border: 2px solid #995522;
+        }
+        .btn-outline:hover {
+            background: rgba(153, 85, 34, 0.05);
+        }
+
+    </style>
+    <!-- 404主体内容 -->
+    <main>
+        <div class="containerb">
+            <div class="error-code">404</div>
+            <div class="error-title">页面不存在</div>
 <div class="wrap">
   <div class="title">站点合并说明</div>
   <div class="text">深思笔记 已于 深悟笔记 合并，文章重新整理。</div>
@@ -54,5 +88,6 @@ html, body {
   </div>
   <div class="text">过渡已完成。即将跳转至 <a href=https://swbj.qsis.cn>『深悟笔记』</a> </div>
 </div>
-</body>
-</html>
+        </div>
+    </main>
+<?php include 'footer.php'; ?>
